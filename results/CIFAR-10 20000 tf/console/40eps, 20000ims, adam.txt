@@ -1,0 +1,221 @@
+C:\Users\User\AppData\Local\Programs\Python\Python35\python.exe C:/Users/User/PycharmProjects/neural-networks-sandbox/neural_network.py
+Using TensorFlow backend.
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cublas64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cudnn64_5.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cufft64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library nvcuda.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library curand64_80.dll locally
+neural_network module running...
+SRCNN tf running...
+getting SRCNN-RGB CIFAR-10 (20000) dataset ...
+opening datasets/srcnn-rgb-cifar10-20000-dataset.npz...
+validation...
+ACCEPTED
+validation...
+ACCEPTED
+X_train : [ num : 20000, height : 32, width : 32, depth : 3 ], X_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+Y_train : [ num : 20000, height : 32, width : 32, depth : 3 ], Y_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+
+making PSNR callback metric...
+making MIN-MAX callback metric...
+SRCNN tf fitting...
+PSNR (3 channels) metric running...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+PSNR callback metric running...
+MIN-MAX callback metric running...
+Epoch 1/40
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:885] Found device 0 with properties: 
+name: GeForce GT 740M
+major: 3 minor: 0 memoryClockRate (GHz) 0.895
+pciBusID 0000:01:00.0
+Total memory: 2.00GiB
+Free memory: 1.92GiB
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:906] DMA: 0 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:916] 0:   Y 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GT 740M, pci bus id: 0000:01:00.0)
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0317 - acc: 0.6591 - mean_squared_error: 0.0128 - psnr_3_channels: 25.9072 - PSNR: 23.2236281484
+20000/20000 [==============================] - 83s - loss: 0.0317 - acc: 0.6592 - mean_squared_error: 0.0128 - psnr_3_channels: 25.9113    
+Epoch 2/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0161 - acc: 0.7838 - mean_squared_error: 0.0039 - psnr_3_channels: 30.3709 - PSNR: 24.2919132759
+20000/20000 [==============================] - 78s - loss: 0.0161 - acc: 0.7839 - mean_squared_error: 0.0039 - psnr_3_channels: 30.3680    
+Epoch 3/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0125 - acc: 0.8155 - mean_squared_error: 0.0036 - psnr_3_channels: 31.4686 - PSNR: 24.5806669675
+20000/20000 [==============================] - 78s - loss: 0.0125 - acc: 0.8154 - mean_squared_error: 0.0036 - psnr_3_channels: 31.4689    
+Epoch 4/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0103 - acc: 0.8252 - mean_squared_error: 0.0035 - psnr_3_channels: 31.9417 - PSNR: 24.6820544702
+20000/20000 [==============================] - 79s - loss: 0.0103 - acc: 0.8252 - mean_squared_error: 0.0035 - psnr_3_channels: 31.9424    
+Epoch 5/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0087 - acc: 0.8323 - mean_squared_error: 0.0034 - psnr_3_channels: 32.1281 - PSNR: 24.6363673651
+20000/20000 [==============================] - 79s - loss: 0.0087 - acc: 0.8324 - mean_squared_error: 0.0034 - psnr_3_channels: 32.1295    
+Epoch 6/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0075 - acc: 0.8383 - mean_squared_error: 0.0034 - psnr_3_channels: 32.3959 - PSNR: 24.7880242671
+20000/20000 [==============================] - 79s - loss: 0.0075 - acc: 0.8384 - mean_squared_error: 0.0034 - psnr_3_channels: 32.3961    
+Epoch 7/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0066 - acc: 0.8432 - mean_squared_error: 0.0033 - psnr_3_channels: 32.7025 - PSNR: 24.6485510732
+20000/20000 [==============================] - 79s - loss: 0.0066 - acc: 0.8432 - mean_squared_error: 0.0033 - psnr_3_channels: 32.7009    
+Epoch 8/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.8381 - mean_squared_error: 0.0034 - psnr_3_channels: 32.5171 - PSNR: 24.8349604019
+20000/20000 [==============================] - 79s - loss: 0.0060 - acc: 0.8381 - mean_squared_error: 0.0034 - psnr_3_channels: 32.5161    
+Epoch 9/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.8515 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8525 - PSNR: 24.3940437411
+20000/20000 [==============================] - 79s - loss: 0.0055 - acc: 0.8514 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8500    
+Epoch 10/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.8507 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8388 - PSNR: 24.3338043885
+20000/20000 [==============================] - 79s - loss: 0.0052 - acc: 0.8506 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8364    
+Epoch 11/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0050 - acc: 0.8512 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9212 - PSNR: 24.8741725248
+20000/20000 [==============================] - 79s - loss: 0.0050 - acc: 0.8511 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9217    
+Epoch 12/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0048 - acc: 0.8567 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0030 - PSNR: 24.8692695026
+20000/20000 [==============================] - 80s - loss: 0.0048 - acc: 0.8567 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0015    
+Epoch 13/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0046 - acc: 0.8523 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8905 - PSNR: 24.6738440436
+20000/20000 [==============================] - 80s - loss: 0.0046 - acc: 0.8523 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8879    
+Epoch 14/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0045 - acc: 0.8556 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0253 - PSNR: 24.427497643
+20000/20000 [==============================] - 80s - loss: 0.0045 - acc: 0.8556 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0215    
+Epoch 15/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0044 - acc: 0.8531 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9718 - PSNR: 24.8644539355
+20000/20000 [==============================] - 79s - loss: 0.0044 - acc: 0.8531 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9731    
+Epoch 16/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0044 - acc: 0.8513 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9468 - PSNR: 24.515274611
+20000/20000 [==============================] - 80s - loss: 0.0044 - acc: 0.8512 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9454    
+Epoch 17/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0043 - acc: 0.8542 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0158 - PSNR: 24.8370857014
+20000/20000 [==============================] - 80s - loss: 0.0043 - acc: 0.8542 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0163    
+Epoch 18/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0043 - acc: 0.8508 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9259 - PSNR: 24.8784030665
+20000/20000 [==============================] - 79s - loss: 0.0043 - acc: 0.8509 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9279    
+Epoch 19/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0042 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2016 - PSNR: 24.8900928344
+20000/20000 [==============================] - 79s - loss: 0.0042 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2012    
+Epoch 20/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0042 - acc: 0.8506 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8343 - PSNR: 24.5921165697
+20000/20000 [==============================] - 79s - loss: 0.0042 - acc: 0.8506 - mean_squared_error: 0.0033 - psnr_3_channels: 32.8325    
+Epoch 21/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0041 - acc: 0.8605 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2867 - PSNR: 24.8774868632
+20000/20000 [==============================] - 80s - loss: 0.0041 - acc: 0.8605 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2854    
+Epoch 22/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0041 - acc: 0.8547 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1239 - PSNR: 24.9143208627
+20000/20000 [==============================] - 79s - loss: 0.0041 - acc: 0.8547 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1234    
+Epoch 23/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0041 - acc: 0.8547 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0828 - PSNR: 24.8677658492
+20000/20000 [==============================] - 79s - loss: 0.0041 - acc: 0.8547 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0847    
+Epoch 24/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0041 - acc: 0.8521 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0208 - PSNR: 24.8845130449
+20000/20000 [==============================] - 78s - loss: 0.0041 - acc: 0.8522 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0222    
+Epoch 25/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8613 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1263 - PSNR: 24.9168367165
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8613 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1275    
+Epoch 26/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8578 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0205 - PSNR: 24.921701127
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8578 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0221    
+Epoch 27/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8616 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3090 - PSNR: 24.8890713365
+20000/20000 [==============================] - 79s - loss: 0.0040 - acc: 0.8616 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3092    
+Epoch 28/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8568 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1814 - PSNR: 24.8843495413
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8568 - mean_squared_error: 0.0033 - psnr_3_channels: 33.1833    
+Epoch 29/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8609 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2269 - PSNR: 24.9139128687
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8609 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2271    
+Epoch 30/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8639 - mean_squared_error: 0.0032 - psnr_3_channels: 33.2967 - PSNR: 24.9192489883
+20000/20000 [==============================] - 79s - loss: 0.0040 - acc: 0.8640 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2973    
+Epoch 31/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8596 - mean_squared_error: 0.0033 - psnr_3_channels: 33.3294 - PSNR: 24.7762488664
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8596 - mean_squared_error: 0.0033 - psnr_3_channels: 33.3283    
+Epoch 32/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0040 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9673 - PSNR: 24.8349398303
+20000/20000 [==============================] - 80s - loss: 0.0040 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 32.9682    
+Epoch 33/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8592 - mean_squared_error: 0.0032 - psnr_3_channels: 33.2468 - PSNR: 24.8967693369
+20000/20000 [==============================] - 79s - loss: 0.0039 - acc: 0.8591 - mean_squared_error: 0.0032 - psnr_3_channels: 33.2469    
+Epoch 34/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8660 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3900 - PSNR: 24.9439494174
+20000/20000 [==============================] - 79s - loss: 0.0039 - acc: 0.8661 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3903    
+Epoch 35/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8582 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0943 - PSNR: 24.7400130792
+20000/20000 [==============================] - 78s - loss: 0.0039 - acc: 0.8581 - mean_squared_error: 0.0033 - psnr_3_channels: 33.0942    
+Epoch 36/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8651 - mean_squared_error: 0.0032 - psnr_3_channels: 33.4150 - PSNR: 24.8316392156
+20000/20000 [==============================] - 80s - loss: 0.0039 - acc: 0.8651 - mean_squared_error: 0.0032 - psnr_3_channels: 33.4158    
+Epoch 37/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2270 - PSNR: 24.8513014308
+20000/20000 [==============================] - 80s - loss: 0.0039 - acc: 0.8576 - mean_squared_error: 0.0033 - psnr_3_channels: 33.2275    
+Epoch 38/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8617 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3015 - PSNR: 24.9742122298
+20000/20000 [==============================] - 79s - loss: 0.0039 - acc: 0.8617 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3025    
+Epoch 39/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8632 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3313 - PSNR: 24.8746789569
+20000/20000 [==============================] - 80s - loss: 0.0039 - acc: 0.8633 - mean_squared_error: 0.0032 - psnr_3_channels: 33.3309    
+Epoch 40/40
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0039 - acc: 0.8619 - mean_squared_error: 0.0032 - psnr_3_channels: 33.1323 - PSNR: 24.8565720793
+20000/20000 [==============================] - 80s - loss: 0.0039 - acc: 0.8618 - mean_squared_error: 0.0032 - psnr_3_channels: 33.1322    
+PSNR test result : 24.8850859987
+MIN-MAX test result : (0.0, 1.0)
+train_result : epochs : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] history : {'loss': [0.031668741640448569, 0.016070706140995025, 0.012540254285931586, 0.010280929920077325, 0.0086843820571899412, 0.0075031509555876256, 0.0066227175518870354, 0.0060173397190868855, 0.0055316205136477946, 0.0051996229089796547, 0.0049628135189414028, 0.0047676079452037808, 0.0046288319222629075, 0.0045155444420874116, 0.0044450353451073168, 0.004374416768550873, 0.0043020566634833814, 0.0042524787571281194, 0.0042056095555424687, 0.0042082090046256784, 0.0041260609649121762, 0.0041086477793753143, 0.0040869339965283868, 0.0040675127424299714, 0.0040439531125128266, 0.004045037768781185, 0.0039923652935773138, 0.0039964061357080933, 0.0039826532199978828, 0.0039555697865784169, 0.0039572035919874906, 0.0039647385135293004, 0.0039262170113623139, 0.0039049020089209079, 0.0039192884277552366, 0.0038949997216463088, 0.0039069169953465464, 0.0038839339680969715, 0.0038712517838925121, 0.003876689764112234], 'mean_squared_error': [0.012785031781345605, 0.0038611686058342455, 0.0035614991120994093, 0.0034535719580948351, 0.003422663716226816, 0.0033896345678716897, 0.0033459534399211408, 0.0033568185366690158, 0.0033193922478705644, 0.0033149682588875292, 0.0033175262421369553, 0.0033023899167776106, 0.003302029974013567, 0.0032967629481106997, 0.0033109479162842037, 0.0033090774655342103, 0.0032928094096481798, 0.0032902827490121126, 0.0032821794550865887, 0.0033196019858121872, 0.0032642723411321641, 0.0032743388451635836, 0.0032759300451725721, 0.003277291292697191, 0.0032707345891743898, 0.0032861633896827699, 0.0032494802832603456, 0.0032690664891153573, 0.0032671421311795713, 0.003250223157554865, 0.003257358504086733, 0.0032781753130257129, 0.0032479492068290712, 0.0032340799849480389, 0.0032561590395867824, 0.0032380975071340801, 0.0032558455303311347, 0.003239066546410322, 0.0032317663025110961, 0.0032424518201500177], 'acc': [0.65923696289062494, 0.78386347656249999, 0.81544008789062505, 0.82515024414062499, 0.83236748046874998, 0.83839101562499996, 0.84319687499999996, 0.83814257812500004, 0.85140888671875004, 0.85055439453125004, 0.85113251953125002, 0.85667802734374998, 0.85227446289062503, 0.85563867187499998, 0.85309179687500003, 0.85123886718749997, 0.85421625976562499, 0.85092534179687496, 0.85759267578124998, 0.85064975585937497, 0.86052792968750003, 0.85470659179687503, 0.85473256835937494, 0.85218066406250004, 0.86128359374999997, 0.85777099609374996, 0.86158837890624995, 0.85683193359374998, 0.86089770507812502, 0.863960595703125, 0.85963427734374998, 0.85764931640624997, 0.85911635742187498, 0.86605151367187505, 0.85811176757812502, 0.86512631835937503, 0.85762358398437499, 0.86171269531250005, 0.86331958007812504, 0.86176918945312497], 'psnr_3_channels': [25.911307807922363, 30.367950604248048, 31.468932965087891, 31.942398449707031, 32.129487042236327, 32.396107330322266, 32.700945068359374, 32.516136721801757, 32.850016354370119, 32.836429211425781, 32.921695684814452, 33.001507629394531, 32.887949362182617, 33.021514993286132, 32.973113836669924, 32.945350866699222, 33.01632102050781, 32.927906121826169, 33.201247845458987, 32.832492126464842, 33.285436450195313, 33.123386102294923, 33.084671520996096, 33.02220794067383, 33.127528778076169, 33.022093133544921, 33.309215270996091, 33.183298956298827, 33.227057989501951, 33.297257659912113, 33.3283440246582, 32.96822384033203, 33.24690108642578, 33.390269482421878, 33.094182092285159, 33.415833740234376, 33.227468878173831, 33.302481762695315, 33.330947296142575, 33.132237500000002]}
+saving model to results/CIFAR-10 20000 tf/model/srcnn-cifar10-20000-tf-20000images-9_3_1_5-64_32_32-40epochs-he_uniform-custom_relu-adam.h5...
+model results/CIFAR-10 20000 tf/model/srcnn-cifar10-20000-tf-20000images-9_3_1_5-64_32_32-40epochs-he_uniform-custom_relu-adam.h5 saved
+ 9952/10000 [============================>.] - ETA: 0s
+test_result : [0.0038792373754084112, 0.86109208984374996, 0.0032470682080835106, 32.665175201416012]
+plotting train and test results...
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.png
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.svg
+plotting psrn_3_channels train and test results...
+saving results/CIFAR-10 20000 tf/plots/psnr_3_channels.png
+saving results/CIFAR-10 20000 tf/plots/psnr_3_channels.svg
+PSNR history : [23.223628148432304, 24.291913275902857, 24.580666967490565, 24.682054470176567, 24.636367365084869, 24.788024267125344, 24.648551073210569, 24.834960401899167, 24.394043741082626, 24.333804388498983, 24.874172524767584, 24.86926950259139, 24.673844043579468, 24.427497643042212, 24.864453935468664, 24.515274611046891, 24.837085701410594, 24.878403066537334, 24.890092834377484, 24.592116569691331, 24.87748686315517, 24.914320862716323, 24.867765849210009, 24.884513044905837, 24.916836716509692, 24.921701127038784, 24.889071336546348, 24.884349541316311, 24.913912868738954, 24.91924898828081, 24.776248866400117, 24.834939830343579, 24.89676933687063, 24.943949417447616, 24.740013079208303, 24.83163921558652, 24.851301430791843, 24.974212229751185, 24.874678956899572, 24.856572079268865]
+PSNR epoch history :  []
+MIN-MAX history : [(0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0)]
+MIN-MAX epoch history :  []
+10000/10000 [==============================] - 7s     
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+prediction image 0 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+Traceback (most recent call last):
+  File "C:/Users/User/PycharmProjects/neural-networks-sandbox/neural_network.py", line 2270, in <module>
+    fit_conv_srcnn_tf()
+  File "C:/Users/User/PycharmProjects/neural-networks-sandbox/neural_network.py", line 1360, in fit_conv_srcnn_tf
+    from image_handler import get_image
+  File "C:\Users\User\PycharmProjects\neural-networks-sandbox\image_handler.py", line 154, in <module>
+    def make_interpolated_image_from(image, interpolation=Image.BICUBIC, method=Image.AFFINE):
+AttributeError: type object 'Image' has no attribute 'BICUBIC'
+
+Process finished with exit code 1

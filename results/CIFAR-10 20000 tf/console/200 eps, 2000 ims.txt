@@ -1,0 +1,1007 @@
+C:\Users\User\AppData\Local\Programs\Python\Python35\python.exe C:/Users/User/PycharmProjects/neural-networks-sandbox/neural_network.py
+Using TensorFlow backend.
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cublas64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cudnn64_5.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cufft64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library nvcuda.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library curand64_80.dll locally
+neural_network module running...
+SRCNN tf running...
+getting SRCNN-RGB CIFAR-10 (20000) dataset ...
+opening datasets/srcnn-rgb-cifar10-20000-dataset.npz...
+validation...
+ACCEPTED
+validation...
+ACCEPTED
+X_train : [ num : 2000, height : 32, width : 32, depth : 3 ], X_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+Y_train : [ num : 2000, height : 32, width : 32, depth : 3 ], Y_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+
+making PSNR callback metric...
+making MIN-MAX callback metric...
+SRCNN fitting...
+PSNR (3 channels) metric running...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+PSNR callback metric running...
+MIN-MAX callback metric running...
+Epoch 1/200
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:885] Found device 0 with properties: 
+name: GeForce GT 740M
+major: 3 minor: 0 memoryClockRate (GHz) 0.895
+pciBusID 0000:01:00.0
+Total memory: 2.00GiB
+Free memory: 1.92GiB
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:906] DMA: 0 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:916] 0:   Y 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GT 740M, pci bus id: 0000:01:00.0)
+1984/2000 [============================>.] - ETA: 0s - loss: 0.1228 - acc: 0.3771 - mean_squared_error: 0.0984 - psnr_3_channels: 14.0422 - PSNR: 16.5464651104
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 12s - loss: 0.1222 - acc: 0.3783 - mean_squared_error: 0.0977 - psnr_3_channels: 14.0990    
+Epoch 2/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0408 - acc: 0.5168 - mean_squared_error: 0.0185 - psnr_3_channels: 20.4765 - PSNR: 16.7065979126
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0408 - acc: 0.5171 - mean_squared_error: 0.0185 - psnr_3_channels: 20.4739     
+Epoch 3/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0342 - acc: 0.5705 - mean_squared_error: 0.0133 - psnr_3_channels: 21.9468 - PSNR: 15.4138116464
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0343 - acc: 0.5706 - mean_squared_error: 0.0135 - psnr_3_channels: 21.9117     
+Epoch 4/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0494 - acc: 0.4936 - mean_squared_error: 0.0297 - psnr_3_channels: 19.1201 - PSNR: 18.9764352695
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0493 - acc: 0.4941 - mean_squared_error: 0.0295 - psnr_3_channels: 19.1450     
+Epoch 5/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0302 - acc: 0.5910 - mean_squared_error: 0.0113 - psnr_3_channels: 22.5595 - PSNR: 19.5003696783
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0301 - acc: 0.5910 - mean_squared_error: 0.0113 - psnr_3_channels: 22.5655     
+Epoch 6/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0277 - acc: 0.6096 - mean_squared_error: 0.0098 - psnr_3_channels: 23.2945 - PSNR: 18.4766343833
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0277 - acc: 0.6101 - mean_squared_error: 0.0098 - psnr_3_channels: 23.2858     
+Epoch 7/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0268 - acc: 0.6226 - mean_squared_error: 0.0097 - psnr_3_channels: 23.3543 - PSNR: 19.3521634159
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0268 - acc: 0.6226 - mean_squared_error: 0.0098 - psnr_3_channels: 23.3434     
+Epoch 8/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0265 - acc: 0.6381 - mean_squared_error: 0.0102 - psnr_3_channels: 23.1886 - PSNR: 19.4355920436
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0265 - acc: 0.6385 - mean_squared_error: 0.0102 - psnr_3_channels: 23.1791     
+Epoch 9/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0233 - acc: 0.6380 - mean_squared_error: 0.0078 - psnr_3_channels: 24.4945 - PSNR: 19.5601053198
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0233 - acc: 0.6382 - mean_squared_error: 0.0078 - psnr_3_channels: 24.4836     
+Epoch 10/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0238 - acc: 0.6488 - mean_squared_error: 0.0090 - psnr_3_channels: 23.7036 - PSNR: 20.4608598253
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0238 - acc: 0.6495 - mean_squared_error: 0.0090 - psnr_3_channels: 23.7109     
+Epoch 11/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0212 - acc: 0.6415 - mean_squared_error: 0.0070 - psnr_3_channels: 25.0116 - PSNR: 19.347689307
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0212 - acc: 0.6416 - mean_squared_error: 0.0071 - psnr_3_channels: 24.9928     
+Epoch 12/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0228 - acc: 0.6655 - mean_squared_error: 0.0092 - psnr_3_channels: 23.5639 - PSNR: 21.1713925618
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0228 - acc: 0.6642 - mean_squared_error: 0.0092 - psnr_3_channels: 23.5726     
+Epoch 13/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0204 - acc: 0.6616 - mean_squared_error: 0.0074 - psnr_3_channels: 24.7766 - PSNR: 21.2539645479
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0204 - acc: 0.6620 - mean_squared_error: 0.0074 - psnr_3_channels: 24.7788     
+Epoch 14/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0210 - acc: 0.6497 - mean_squared_error: 0.0085 - psnr_3_channels: 23.9943 - PSNR: 20.7403011368
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0210 - acc: 0.6509 - mean_squared_error: 0.0085 - psnr_3_channels: 23.9937     
+Epoch 15/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0194 - acc: 0.6724 - mean_squared_error: 0.0074 - psnr_3_channels: 24.7627 - PSNR: 21.1732739758
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0194 - acc: 0.6709 - mean_squared_error: 0.0074 - psnr_3_channels: 24.7557     
+Epoch 16/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0186 - acc: 0.6734 - mean_squared_error: 0.0071 - psnr_3_channels: 24.9924 - PSNR: 19.8326650537
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0187 - acc: 0.6732 - mean_squared_error: 0.0072 - psnr_3_channels: 24.9758     
+Epoch 17/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0188 - acc: 0.6768 - mean_squared_error: 0.0078 - psnr_3_channels: 24.5919 - PSNR: 20.8666584243
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0188 - acc: 0.6761 - mean_squared_error: 0.0078 - psnr_3_channels: 24.5918     
+Epoch 18/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0174 - acc: 0.6847 - mean_squared_error: 0.0068 - psnr_3_channels: 25.4992 - PSNR: 21.545480543
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0174 - acc: 0.6847 - mean_squared_error: 0.0068 - psnr_3_channels: 25.5023     
+Epoch 19/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0175 - acc: 0.6842 - mean_squared_error: 0.0073 - psnr_3_channels: 24.8376 - PSNR: 22.5742063866
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0175 - acc: 0.6842 - mean_squared_error: 0.0072 - psnr_3_channels: 24.8639     
+Epoch 20/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0171 - acc: 0.7011 - mean_squared_error: 0.0072 - psnr_3_channels: 24.9634 - PSNR: 21.6415086814
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0171 - acc: 0.7002 - mean_squared_error: 0.0072 - psnr_3_channels: 24.9621     
+Epoch 21/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0153 - acc: 0.6933 - mean_squared_error: 0.0058 - psnr_3_channels: 26.3130 - PSNR: 22.9025240461
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0153 - acc: 0.6937 - mean_squared_error: 0.0058 - psnr_3_channels: 26.3247     
+Epoch 22/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0159 - acc: 0.7006 - mean_squared_error: 0.0068 - psnr_3_channels: 25.3264 - PSNR: 19.9660735005
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0159 - acc: 0.7007 - mean_squared_error: 0.0068 - psnr_3_channels: 25.3099     
+Epoch 23/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0164 - acc: 0.6907 - mean_squared_error: 0.0075 - psnr_3_channels: 24.9169 - PSNR: 20.4296409544
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0164 - acc: 0.6909 - mean_squared_error: 0.0075 - psnr_3_channels: 24.9189     
+Epoch 24/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0149 - acc: 0.7033 - mean_squared_error: 0.0063 - psnr_3_channels: 25.8251 - PSNR: 23.3159079551
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0149 - acc: 0.7037 - mean_squared_error: 0.0063 - psnr_3_channels: 25.8507     
+Epoch 25/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0141 - acc: 0.7107 - mean_squared_error: 0.0058 - psnr_3_channels: 26.2795 - PSNR: 21.2379472517
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0141 - acc: 0.7110 - mean_squared_error: 0.0058 - psnr_3_channels: 26.2775     
+Epoch 26/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0137 - acc: 0.6959 - mean_squared_error: 0.0057 - psnr_3_channels: 26.2591 - PSNR: 21.2155802875
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0137 - acc: 0.6966 - mean_squared_error: 0.0057 - psnr_3_channels: 26.2410     
+Epoch 27/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0144 - acc: 0.7365 - mean_squared_error: 0.0067 - psnr_3_channels: 25.5392 - PSNR: 23.5250795834
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0144 - acc: 0.7363 - mean_squared_error: 0.0067 - psnr_3_channels: 25.5611     
+Epoch 28/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0136 - acc: 0.7034 - mean_squared_error: 0.0062 - psnr_3_channels: 26.0983 - PSNR: 21.7613234593
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0136 - acc: 0.7028 - mean_squared_error: 0.0062 - psnr_3_channels: 26.0874     
+Epoch 29/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0124 - acc: 0.7120 - mean_squared_error: 0.0052 - psnr_3_channels: 26.9950 - PSNR: 22.2877311801
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0124 - acc: 0.7122 - mean_squared_error: 0.0052 - psnr_3_channels: 26.9884     
+Epoch 30/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0137 - acc: 0.7180 - mean_squared_error: 0.0067 - psnr_3_channels: 25.9285 - PSNR: 23.4543287951
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0137 - acc: 0.7173 - mean_squared_error: 0.0067 - psnr_3_channels: 25.9437     
+Epoch 31/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0129 - acc: 0.7128 - mean_squared_error: 0.0062 - psnr_3_channels: 25.9290 - PSNR: 21.8274096138
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0129 - acc: 0.7128 - mean_squared_error: 0.0062 - psnr_3_channels: 25.9311     
+Epoch 32/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0124 - acc: 0.7165 - mean_squared_error: 0.0058 - psnr_3_channels: 26.3333 - PSNR: 23.2090069366
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 8s - loss: 0.0124 - acc: 0.7170 - mean_squared_error: 0.0058 - psnr_3_channels: 26.3358     
+Epoch 33/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0122 - acc: 0.7193 - mean_squared_error: 0.0058 - psnr_3_channels: 26.2995 - PSNR: 22.1571185997
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0122 - acc: 0.7192 - mean_squared_error: 0.0058 - psnr_3_channels: 26.3013     
+Epoch 34/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0118 - acc: 0.7172 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5580 - PSNR: 23.447406595
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0118 - acc: 0.7175 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5699     
+Epoch 35/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0124 - acc: 0.7121 - mean_squared_error: 0.0064 - psnr_3_channels: 25.9418 - PSNR: 22.0735903957
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0124 - acc: 0.7128 - mean_squared_error: 0.0064 - psnr_3_channels: 25.9399     
+Epoch 36/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0117 - acc: 0.7368 - mean_squared_error: 0.0059 - psnr_3_channels: 26.1646 - PSNR: 22.2263279312
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0117 - acc: 0.7366 - mean_squared_error: 0.0059 - psnr_3_channels: 26.1627     
+Epoch 37/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0107 - acc: 0.7227 - mean_squared_error: 0.0050 - psnr_3_channels: 27.2258 - PSNR: 23.9457239897
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0107 - acc: 0.7232 - mean_squared_error: 0.0050 - psnr_3_channels: 27.2385     
+Epoch 38/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0179 - acc: 0.6880 - mean_squared_error: 0.0124 - psnr_3_channels: 24.3596 - PSNR: 12.1256907123
+ - MIN-MAX: (0.0010612085, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0184 - acc: 0.6843 - mean_squared_error: 0.0129 - psnr_3_channels: 24.2741     
+Epoch 39/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0393 - acc: 0.4670 - mean_squared_error: 0.0334 - psnr_3_channels: 19.0548 - PSNR: 20.0538865322
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0391 - acc: 0.4680 - mean_squared_error: 0.0332 - psnr_3_channels: 19.0919     
+Epoch 40/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0146 - acc: 0.6117 - mean_squared_error: 0.0085 - psnr_3_channels: 24.3897 - PSNR: 21.1639675665
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0145 - acc: 0.6123 - mean_squared_error: 0.0085 - psnr_3_channels: 24.3992     
+Epoch 41/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0125 - acc: 0.6406 - mean_squared_error: 0.0066 - psnr_3_channels: 25.6900 - PSNR: 21.3227110174
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0125 - acc: 0.6404 - mean_squared_error: 0.0066 - psnr_3_channels: 25.6860     
+Epoch 42/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0118 - acc: 0.6423 - mean_squared_error: 0.0061 - psnr_3_channels: 25.9987 - PSNR: 22.6024012827
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0118 - acc: 0.6418 - mean_squared_error: 0.0061 - psnr_3_channels: 26.0048     
+Epoch 43/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0111 - acc: 0.6684 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5333 - PSNR: 21.6756633747
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0111 - acc: 0.6693 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5337     
+Epoch 44/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0113 - acc: 0.6604 - mean_squared_error: 0.0060 - psnr_3_channels: 26.0772 - PSNR: 22.0099622862
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0113 - acc: 0.6589 - mean_squared_error: 0.0060 - psnr_3_channels: 26.0629     
+Epoch 45/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0107 - acc: 0.6735 - mean_squared_error: 0.0055 - psnr_3_channels: 26.6760 - PSNR: 23.2618306028
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0107 - acc: 0.6740 - mean_squared_error: 0.0055 - psnr_3_channels: 26.6870     
+Epoch 46/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0106 - acc: 0.6803 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5601 - PSNR: 22.9919137841
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0106 - acc: 0.6807 - mean_squared_error: 0.0056 - psnr_3_channels: 26.5731     
+Epoch 47/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0102 - acc: 0.7147 - mean_squared_error: 0.0054 - psnr_3_channels: 26.8524 - PSNR: 22.7506287576
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0102 - acc: 0.7152 - mean_squared_error: 0.0054 - psnr_3_channels: 26.8531     
+Epoch 48/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0097 - acc: 0.7102 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3442 - PSNR: 23.1045284507
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0097 - acc: 0.7108 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3447     
+Epoch 49/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0099 - acc: 0.6966 - mean_squared_error: 0.0053 - psnr_3_channels: 26.7391 - PSNR: 22.1975439408
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0099 - acc: 0.6966 - mean_squared_error: 0.0053 - psnr_3_channels: 26.7327     
+Epoch 50/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0099 - acc: 0.7065 - mean_squared_error: 0.0055 - psnr_3_channels: 26.6529 - PSNR: 21.849025551
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0099 - acc: 0.7066 - mean_squared_error: 0.0055 - psnr_3_channels: 26.6552     
+Epoch 51/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0096 - acc: 0.6908 - mean_squared_error: 0.0052 - psnr_3_channels: 27.0959 - PSNR: 23.3612734648
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0096 - acc: 0.6916 - mean_squared_error: 0.0052 - psnr_3_channels: 27.1004     
+Epoch 52/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0090 - acc: 0.7221 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7596 - PSNR: 22.8047605969
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0090 - acc: 0.7217 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7496     
+Epoch 53/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0094 - acc: 0.7350 - mean_squared_error: 0.0053 - psnr_3_channels: 26.9268 - PSNR: 21.9540971161
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0094 - acc: 0.7348 - mean_squared_error: 0.0053 - psnr_3_channels: 26.9197     
+Epoch 54/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0088 - acc: 0.7253 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6682 - PSNR: 23.1518009024
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 8s - loss: 0.0088 - acc: 0.7252 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6746     
+Epoch 55/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0090 - acc: 0.7019 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1987 - PSNR: 21.9814795354
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0090 - acc: 0.7023 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1904     
+Epoch 56/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0090 - acc: 0.7468 - mean_squared_error: 0.0052 - psnr_3_channels: 27.0665 - PSNR: 23.7284595779
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0090 - acc: 0.7470 - mean_squared_error: 0.0052 - psnr_3_channels: 27.0816     
+Epoch 57/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0088 - acc: 0.7074 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1219 - PSNR: 22.1218046761
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0089 - acc: 0.7079 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1097     
+Epoch 58/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0086 - acc: 0.7389 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3419 - PSNR: 23.8298442489
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0086 - acc: 0.7389 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3512     
+Epoch 59/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0081 - acc: 0.7229 - mean_squared_error: 0.0045 - psnr_3_channels: 27.9984 - PSNR: 23.5934919399
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0081 - acc: 0.7228 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0026     
+Epoch 60/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0080 - acc: 0.7582 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2985 - PSNR: 21.073936273
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0080 - acc: 0.7585 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2724     
+Epoch 61/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0087 - acc: 0.7291 - mean_squared_error: 0.0053 - psnr_3_channels: 27.1772 - PSNR: 23.4140737866
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0086 - acc: 0.7293 - mean_squared_error: 0.0053 - psnr_3_channels: 27.1797     
+Epoch 62/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0079 - acc: 0.7505 - mean_squared_error: 0.0046 - psnr_3_channels: 28.0414 - PSNR: 22.5315188062
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0079 - acc: 0.7508 - mean_squared_error: 0.0046 - psnr_3_channels: 28.0416     
+Epoch 63/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0081 - acc: 0.7284 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3697 - PSNR: 23.7126302786
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0081 - acc: 0.7287 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3781     
+Epoch 64/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0081 - acc: 0.7411 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3818 - PSNR: 23.2729570576
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0081 - acc: 0.7413 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3884     
+Epoch 65/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0076 - acc: 0.7543 - mean_squared_error: 0.0045 - psnr_3_channels: 28.1489 - PSNR: 22.2446077333
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0076 - acc: 0.7543 - mean_squared_error: 0.0045 - psnr_3_channels: 28.1327     
+Epoch 66/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0078 - acc: 0.7355 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7346 - PSNR: 23.2340739156
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0078 - acc: 0.7360 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7305     
+Epoch 67/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0078 - acc: 0.7485 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7390 - PSNR: 23.8719303485
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0078 - acc: 0.7491 - mean_squared_error: 0.0048 - psnr_3_channels: 27.7528     
+Epoch 68/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0074 - acc: 0.7358 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0106 - PSNR: 23.004175249
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0074 - acc: 0.7366 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0126     
+Epoch 69/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0078 - acc: 0.7550 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3557 - PSNR: 23.8310416927
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0078 - acc: 0.7559 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3682     
+Epoch 70/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0071 - acc: 0.7384 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4897 - PSNR: 23.9694339017
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0071 - acc: 0.7384 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4965     
+Epoch 71/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0072 - acc: 0.7323 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0682 - PSNR: 22.3111827869
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0073 - acc: 0.7327 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0449     
+Epoch 72/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0083 - acc: 0.7597 - mean_squared_error: 0.0055 - psnr_3_channels: 26.8438 - PSNR: 24.0638660545
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0083 - acc: 0.7599 - mean_squared_error: 0.0055 - psnr_3_channels: 26.8624     
+Epoch 73/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0073 - acc: 0.7600 - mean_squared_error: 0.0046 - psnr_3_channels: 28.2059 - PSNR: 22.2825938686
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0073 - acc: 0.7601 - mean_squared_error: 0.0046 - psnr_3_channels: 28.1949     
+Epoch 74/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0071 - acc: 0.7482 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3732 - PSNR: 23.6736530679
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0071 - acc: 0.7483 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3842     
+Epoch 75/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0073 - acc: 0.7448 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6050 - PSNR: 24.0131934034
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0073 - acc: 0.7452 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6175     
+Epoch 76/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0067 - acc: 0.7315 - mean_squared_error: 0.0042 - psnr_3_channels: 28.6760 - PSNR: 24.0076472954
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0067 - acc: 0.7319 - mean_squared_error: 0.0042 - psnr_3_channels: 28.6741     
+Epoch 77/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0075 - acc: 0.7646 - mean_squared_error: 0.0050 - psnr_3_channels: 27.4582 - PSNR: 23.3733360458
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0075 - acc: 0.7644 - mean_squared_error: 0.0050 - psnr_3_channels: 27.4490     
+Epoch 78/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7433 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2791 - PSNR: 22.8554921345
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0068 - acc: 0.7430 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2772     
+Epoch 79/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0073 - acc: 0.7550 - mean_squared_error: 0.0049 - psnr_3_channels: 27.6824 - PSNR: 22.1262291735
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0073 - acc: 0.7555 - mean_squared_error: 0.0049 - psnr_3_channels: 27.6749     
+Epoch 80/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7565 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2936 - PSNR: 23.6542811522
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0068 - acc: 0.7564 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2894     
+Epoch 81/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0063 - acc: 0.7550 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3220 - PSNR: 22.6324288815
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0063 - acc: 0.7548 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3092     
+Epoch 82/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0076 - acc: 0.7544 - mean_squared_error: 0.0053 - psnr_3_channels: 26.9707 - PSNR: 23.799977902
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0076 - acc: 0.7543 - mean_squared_error: 0.0053 - psnr_3_channels: 26.9848     
+Epoch 83/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7373 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7860 - PSNR: 24.0760788176
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7381 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7862     
+Epoch 84/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7728 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8753 - PSNR: 23.9228804467
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7731 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8807     
+Epoch 85/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0070 - acc: 0.7681 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6108 - PSNR: 23.4443703132
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0070 - acc: 0.7681 - mean_squared_error: 0.0048 - psnr_3_channels: 27.6106     
+Epoch 86/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7545 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5637 - PSNR: 24.2090200146
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7548 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5766     
+Epoch 87/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0066 - acc: 0.7465 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2179 - PSNR: 22.7061290419
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0066 - acc: 0.7470 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2019     
+Epoch 88/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0071 - acc: 0.7539 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3162 - PSNR: 24.2440734665
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0071 - acc: 0.7546 - mean_squared_error: 0.0050 - psnr_3_channels: 27.3379     
+Epoch 89/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0065 - acc: 0.7505 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4257 - PSNR: 23.1595486271
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0065 - acc: 0.7500 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4133     
+Epoch 90/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0063 - acc: 0.7627 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6678 - PSNR: 24.0812094597
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0063 - acc: 0.7632 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6694     
+Epoch 91/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0067 - acc: 0.7520 - mean_squared_error: 0.0046 - psnr_3_channels: 27.8499 - PSNR: 22.9551466593
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0067 - acc: 0.7523 - mean_squared_error: 0.0046 - psnr_3_channels: 27.8528     
+Epoch 92/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0063 - acc: 0.7580 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4714 - PSNR: 23.9096939276
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0063 - acc: 0.7580 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4698     
+Epoch 93/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7706 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3136 - PSNR: 23.5871516529
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7710 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3116     
+Epoch 94/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7767 - mean_squared_error: 0.0045 - psnr_3_channels: 28.3097 - PSNR: 23.7775082387
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7761 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3147     
+Epoch 95/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0063 - acc: 0.7456 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2301 - PSNR: 23.5716017851
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0063 - acc: 0.7463 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2415     
+Epoch 96/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0065 - acc: 0.7689 - mean_squared_error: 0.0046 - psnr_3_channels: 28.1322 - PSNR: 23.9596280995
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0065 - acc: 0.7692 - mean_squared_error: 0.0046 - psnr_3_channels: 28.1356     
+Epoch 97/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7657 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5856 - PSNR: 24.1663300998
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7662 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5894     
+Epoch 98/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7437 - mean_squared_error: 0.0049 - psnr_3_channels: 27.6406 - PSNR: 21.6111944037
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0068 - acc: 0.7428 - mean_squared_error: 0.0049 - psnr_3_channels: 27.6247     
+Epoch 99/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0066 - acc: 0.7638 - mean_squared_error: 0.0047 - psnr_3_channels: 27.8829 - PSNR: 24.1474610315
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0066 - acc: 0.7643 - mean_squared_error: 0.0047 - psnr_3_channels: 27.9025     
+Epoch 100/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7471 - mean_squared_error: 0.0040 - psnr_3_channels: 29.0609 - PSNR: 23.6363045624
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7471 - mean_squared_error: 0.0040 - psnr_3_channels: 29.0528     
+Epoch 101/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7728 - mean_squared_error: 0.0050 - psnr_3_channels: 27.4393 - PSNR: 24.0583825467
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0068 - acc: 0.7727 - mean_squared_error: 0.0050 - psnr_3_channels: 27.4504     
+Epoch 102/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7435 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8527 - PSNR: 24.1052947017
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7438 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8631     
+Epoch 103/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7809 - mean_squared_error: 0.0043 - psnr_3_channels: 28.8550 - PSNR: 23.6475858882
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0060 - acc: 0.7813 - mean_squared_error: 0.0043 - psnr_3_channels: 28.8484     
+Epoch 104/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7443 - mean_squared_error: 0.0041 - psnr_3_channels: 28.7512 - PSNR: 24.2780575254
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7447 - mean_squared_error: 0.0041 - psnr_3_channels: 28.7604     
+Epoch 105/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7644 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5085 - PSNR: 23.7626480636
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7644 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4949     
+Epoch 106/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0065 - acc: 0.7634 - mean_squared_error: 0.0048 - psnr_3_channels: 27.5308 - PSNR: 23.8284724669
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0065 - acc: 0.7639 - mean_squared_error: 0.0048 - psnr_3_channels: 27.5363     
+Epoch 107/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.8051 - mean_squared_error: 0.0039 - psnr_3_channels: 29.8584 - PSNR: 23.4596230294
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.8046 - mean_squared_error: 0.0039 - psnr_3_channels: 29.8401     
+Epoch 108/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0065 - acc: 0.7341 - mean_squared_error: 0.0049 - psnr_3_channels: 27.5420 - PSNR: 22.8534298914
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0065 - acc: 0.7346 - mean_squared_error: 0.0049 - psnr_3_channels: 27.5413     
+Epoch 109/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7706 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4615 - PSNR: 24.0466592592
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7700 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4551     
+Epoch 110/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7653 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1928 - PSNR: 22.6487948693
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7656 - mean_squared_error: 0.0041 - psnr_3_channels: 29.1704     
+Epoch 111/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7779 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5188 - PSNR: 24.016147397
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0060 - acc: 0.7786 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5242     
+Epoch 112/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7508 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8018 - PSNR: 23.847882409
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7513 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8059     
+Epoch 113/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7748 - mean_squared_error: 0.0045 - psnr_3_channels: 28.3738 - PSNR: 23.3297295832
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7754 - mean_squared_error: 0.0045 - psnr_3_channels: 28.3679     
+Epoch 114/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7641 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4510 - PSNR: 24.1866142129
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7648 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4651     
+Epoch 115/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7579 - mean_squared_error: 0.0041 - psnr_3_channels: 28.7246 - PSNR: 24.1311839635
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7556 - mean_squared_error: 0.0041 - psnr_3_channels: 28.7175     
+Epoch 116/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7756 - mean_squared_error: 0.0048 - psnr_3_channels: 27.8059 - PSNR: 23.5982003934
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7758 - mean_squared_error: 0.0048 - psnr_3_channels: 27.8138     
+Epoch 117/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7612 - mean_squared_error: 0.0040 - psnr_3_channels: 29.2648 - PSNR: 24.2830865642
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7612 - mean_squared_error: 0.0040 - psnr_3_channels: 29.2639     
+Epoch 118/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7712 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7886 - PSNR: 23.1024832857
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7712 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7846     
+Epoch 119/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7549 - mean_squared_error: 0.0043 - psnr_3_channels: 28.8220 - PSNR: 24.5013212446
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7555 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8440     
+Epoch 120/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7770 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6018 - PSNR: 24.3268417421
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7773 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6096     
+Epoch 121/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7575 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1441 - PSNR: 23.9361463658
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7576 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1413     
+Epoch 122/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7748 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5056 - PSNR: 24.1157563046
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7743 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5122     
+Epoch 123/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7686 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7766 - PSNR: 23.9165170778
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7692 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7813     
+Epoch 124/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7591 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8197 - PSNR: 23.8979033998
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7597 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8279     
+Epoch 125/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7756 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2561 - PSNR: 21.497192004
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0060 - acc: 0.7757 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2296     
+Epoch 126/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7699 - mean_squared_error: 0.0047 - psnr_3_channels: 28.0675 - PSNR: 23.9931915991
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7684 - mean_squared_error: 0.0047 - psnr_3_channels: 28.0613     
+Epoch 127/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7641 - mean_squared_error: 0.0039 - psnr_3_channels: 29.3951 - PSNR: 24.3696772825
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7648 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4087     
+Epoch 128/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7848 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5708 - PSNR: 23.9612609911
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7850 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5792     
+Epoch 129/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7635 - mean_squared_error: 0.0041 - psnr_3_channels: 28.9341 - PSNR: 24.0644627254
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7635 - mean_squared_error: 0.0041 - psnr_3_channels: 28.9393     
+Epoch 130/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7557 - mean_squared_error: 0.0045 - psnr_3_channels: 27.9622 - PSNR: 24.4743993017
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7569 - mean_squared_error: 0.0045 - psnr_3_channels: 27.9779     
+Epoch 131/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7752 - mean_squared_error: 0.0042 - psnr_3_channels: 29.1352 - PSNR: 23.9784441656
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7752 - mean_squared_error: 0.0042 - psnr_3_channels: 29.1364     
+Epoch 132/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7703 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8412 - PSNR: 23.9908967494
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7694 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8465     
+Epoch 133/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7689 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1443 - PSNR: 23.4521228726
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7684 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1310     
+Epoch 134/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7584 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4375 - PSNR: 24.0797222122
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7589 - mean_squared_error: 0.0043 - psnr_3_channels: 28.4471     
+Epoch 135/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7845 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1131 - PSNR: 23.9370342848
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7831 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1065     
+Epoch 136/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7731 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5640 - PSNR: 23.883772527
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7734 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5443     
+Epoch 137/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7810 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9623 - PSNR: 24.177172776
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7813 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9765     
+Epoch 138/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7694 - mean_squared_error: 0.0039 - psnr_3_channels: 29.3227 - PSNR: 24.0728275593
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7694 - mean_squared_error: 0.0039 - psnr_3_channels: 29.3221     
+Epoch 139/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7674 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9555 - PSNR: 23.373535601
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7679 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9480     
+Epoch 140/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7729 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1229 - PSNR: 24.4126239487
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7733 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1335     
+Epoch 141/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7881 - mean_squared_error: 0.0041 - psnr_3_channels: 29.1600 - PSNR: 23.3099970516
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7880 - mean_squared_error: 0.0041 - psnr_3_channels: 29.1569     
+Epoch 142/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7716 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7435 - PSNR: 24.2753069921
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7715 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7417     
+Epoch 143/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7686 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4241 - PSNR: 23.722885742
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7685 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4166     
+Epoch 144/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7755 - mean_squared_error: 0.0040 - psnr_3_channels: 29.4676 - PSNR: 23.8378156017
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7760 - mean_squared_error: 0.0040 - psnr_3_channels: 29.4670     
+Epoch 145/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7733 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2844 - PSNR: 22.4772342997
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7725 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2714     
+Epoch 146/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7684 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9753 - PSNR: 24.1685671253
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7691 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9896     
+Epoch 147/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7766 - mean_squared_error: 0.0038 - psnr_3_channels: 29.9850 - PSNR: 23.9882903238
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0051 - acc: 0.7764 - mean_squared_error: 0.0038 - psnr_3_channels: 29.9673     
+Epoch 148/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7705 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3030 - PSNR: 22.7903125124
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7711 - mean_squared_error: 0.0040 - psnr_3_channels: 29.2931     
+Epoch 149/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.8000 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7726 - PSNR: 23.3785753734
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7995 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7624     
+Epoch 150/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7778 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8547 - PSNR: 23.8119402017
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7781 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8611     
+Epoch 151/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7735 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5324 - PSNR: 23.880673318
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7737 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5424     
+Epoch 152/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7715 - mean_squared_error: 0.0039 - psnr_3_channels: 29.6015 - PSNR: 23.4128183965
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7713 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5921     
+Epoch 153/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7740 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3625 - PSNR: 24.0864233589
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7741 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3696     
+Epoch 154/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7737 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4916 - PSNR: 23.5946174027
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0051 - acc: 0.7733 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4822     
+Epoch 155/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7831 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7674 - PSNR: 24.0599336081
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7829 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7679     
+Epoch 156/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7629 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8887 - PSNR: 23.6687822814
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7631 - mean_squared_error: 0.0041 - psnr_3_channels: 28.8903     
+Epoch 157/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7984 - mean_squared_error: 0.0039 - psnr_3_channels: 29.6026 - PSNR: 24.1354818439
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0051 - acc: 0.7983 - mean_squared_error: 0.0039 - psnr_3_channels: 29.6015     
+Epoch 158/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7674 - mean_squared_error: 0.0041 - psnr_3_channels: 29.1388 - PSNR: 23.715958167
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7672 - mean_squared_error: 0.0041 - psnr_3_channels: 29.1441     
+Epoch 159/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7841 - mean_squared_error: 0.0039 - psnr_3_channels: 29.2693 - PSNR: 23.2339481039
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7836 - mean_squared_error: 0.0040 - psnr_3_channels: 29.2450     
+Epoch 160/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7782 - mean_squared_error: 0.0045 - psnr_3_channels: 28.1476 - PSNR: 23.648967082
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0057 - acc: 0.7783 - mean_squared_error: 0.0045 - psnr_3_channels: 28.1493     
+Epoch 161/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7650 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5136 - PSNR: 24.3234980423
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0051 - acc: 0.7653 - mean_squared_error: 0.0039 - psnr_3_channels: 29.5199     
+Epoch 162/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7750 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1783 - PSNR: 24.4177010313
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7754 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1951     
+Epoch 163/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7777 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1308 - PSNR: 24.1474886595
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0052 - acc: 0.7769 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1385     
+Epoch 164/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7869 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5854 - PSNR: 22.352072358
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7870 - mean_squared_error: 0.0044 - psnr_3_channels: 28.5661     
+Epoch 165/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.1047 - acc: 0.4242 - mean_squared_error: 0.1029 - psnr_3_channels: 15.1000 - PSNR: 17.6363389695
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.1041 - acc: 0.4235 - mean_squared_error: 0.1022 - psnr_3_channels: 15.1393     
+Epoch 166/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0159 - acc: 0.4737 - mean_squared_error: 0.0129 - psnr_3_channels: 22.0599 - PSNR: 20.2304483285
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0158 - acc: 0.4741 - mean_squared_error: 0.0128 - psnr_3_channels: 22.0758     
+Epoch 167/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0127 - acc: 0.5907 - mean_squared_error: 0.0098 - psnr_3_channels: 23.4044 - PSNR: 21.2072872487
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0127 - acc: 0.5917 - mean_squared_error: 0.0097 - psnr_3_channels: 23.4143     
+Epoch 168/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0107 - acc: 0.6209 - mean_squared_error: 0.0079 - psnr_3_channels: 24.3154 - PSNR: 22.1544604769
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0107 - acc: 0.6204 - mean_squared_error: 0.0079 - psnr_3_channels: 24.3278     
+Epoch 169/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0097 - acc: 0.6585 - mean_squared_error: 0.0071 - psnr_3_channels: 25.1956 - PSNR: 21.9503914262
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0097 - acc: 0.6585 - mean_squared_error: 0.0071 - psnr_3_channels: 25.1972     
+Epoch 170/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0084 - acc: 0.6740 - mean_squared_error: 0.0059 - psnr_3_channels: 26.2304 - PSNR: 21.4619433412
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0084 - acc: 0.6738 - mean_squared_error: 0.0059 - psnr_3_channels: 26.2200     
+Epoch 171/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0082 - acc: 0.6847 - mean_squared_error: 0.0058 - psnr_3_channels: 26.1415 - PSNR: 22.8859166699
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0082 - acc: 0.6849 - mean_squared_error: 0.0058 - psnr_3_channels: 26.1529     
+Epoch 172/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0080 - acc: 0.6775 - mean_squared_error: 0.0057 - psnr_3_channels: 26.2780 - PSNR: 22.720349023
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0080 - acc: 0.6782 - mean_squared_error: 0.0057 - psnr_3_channels: 26.2740     
+Epoch 173/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0074 - acc: 0.7166 - mean_squared_error: 0.0053 - psnr_3_channels: 27.1052 - PSNR: 22.9015475808
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0074 - acc: 0.7164 - mean_squared_error: 0.0052 - psnr_3_channels: 27.1046     
+Epoch 174/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0074 - acc: 0.6959 - mean_squared_error: 0.0053 - psnr_3_channels: 26.7466 - PSNR: 23.2317342166
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0074 - acc: 0.6954 - mean_squared_error: 0.0053 - psnr_3_channels: 26.7624     
+Epoch 175/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0071 - acc: 0.7300 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1992 - PSNR: 23.4530120191
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0071 - acc: 0.7306 - mean_squared_error: 0.0051 - psnr_3_channels: 27.1919     
+Epoch 176/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7008 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3695 - PSNR: 23.6450169914
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0068 - acc: 0.7005 - mean_squared_error: 0.0049 - psnr_3_channels: 27.3771     
+Epoch 177/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0065 - acc: 0.7344 - mean_squared_error: 0.0047 - psnr_3_channels: 27.8445 - PSNR: 23.2340692823
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0066 - acc: 0.7351 - mean_squared_error: 0.0047 - psnr_3_channels: 27.8395     
+Epoch 178/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7210 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9041 - PSNR: 22.9743988429
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7208 - mean_squared_error: 0.0046 - psnr_3_channels: 27.9073     
+Epoch 179/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7405 - mean_squared_error: 0.0046 - psnr_3_channels: 28.2742 - PSNR: 22.519475777
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0064 - acc: 0.7404 - mean_squared_error: 0.0046 - psnr_3_channels: 28.2672     
+Epoch 180/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0069 - acc: 0.7205 - mean_squared_error: 0.0052 - psnr_3_channels: 27.0062 - PSNR: 23.5357190482
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0069 - acc: 0.7208 - mean_squared_error: 0.0052 - psnr_3_channels: 27.0084     
+Epoch 181/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7388 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4204 - PSNR: 23.714632257
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7383 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4236     
+Epoch 182/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7292 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2213 - PSNR: 23.8585118603
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7300 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2287     
+Epoch 183/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0062 - acc: 0.7666 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2422 - PSNR: 22.8841041513
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0062 - acc: 0.7657 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2344     
+Epoch 184/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7355 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3672 - PSNR: 23.8775556995
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0060 - acc: 0.7360 - mean_squared_error: 0.0044 - psnr_3_channels: 28.3751     
+Epoch 185/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7297 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7474 - PSNR: 23.0251508364
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7294 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7379     
+Epoch 186/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7609 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2274 - PSNR: 23.7499023865
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0061 - acc: 0.7614 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2390     
+Epoch 187/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7496 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5707 - PSNR: 24.1227067534
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7504 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5808     
+Epoch 188/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7505 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7587 - PSNR: 23.6855594191
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7510 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7541     
+Epoch 189/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7782 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4847 - PSNR: 23.4383833784
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0059 - acc: 0.7786 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4835     
+Epoch 190/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0059 - acc: 0.7243 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2116 - PSNR: 23.9484067305
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7247 - mean_squared_error: 0.0044 - psnr_3_channels: 28.2256     
+Epoch 191/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7746 - mean_squared_error: 0.0041 - psnr_3_channels: 29.3020 - PSNR: 23.905518256
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7751 - mean_squared_error: 0.0041 - psnr_3_channels: 29.2932     
+Epoch 192/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7743 - mean_squared_error: 0.0046 - psnr_3_channels: 28.2454 - PSNR: 23.5390774394
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0060 - acc: 0.7741 - mean_squared_error: 0.0046 - psnr_3_channels: 28.2496     
+Epoch 193/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0058 - acc: 0.7479 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0505 - PSNR: 23.2975204929
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0058 - acc: 0.7476 - mean_squared_error: 0.0045 - psnr_3_channels: 28.0417     
+Epoch 194/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7649 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3007 - PSNR: 24.0878813643
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0054 - acc: 0.7652 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3069     
+Epoch 195/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7624 - mean_squared_error: 0.0040 - psnr_3_channels: 29.6215 - PSNR: 23.6068825144
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7616 - mean_squared_error: 0.0040 - psnr_3_channels: 29.6147     
+Epoch 196/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7720 - mean_squared_error: 0.0040 - psnr_3_channels: 29.5388 - PSNR: 24.0230494084
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7724 - mean_squared_error: 0.0040 - psnr_3_channels: 29.5474     
+Epoch 197/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7755 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8573 - PSNR: 23.7356993619
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7751 - mean_squared_error: 0.0042 - psnr_3_channels: 28.8602     
+Epoch 198/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7605 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5271 - PSNR: 23.7122866246
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0056 - acc: 0.7598 - mean_squared_error: 0.0043 - psnr_3_channels: 28.5226     
+Epoch 199/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7685 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3718 - PSNR: 23.6881714206
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0053 - acc: 0.7689 - mean_squared_error: 0.0040 - psnr_3_channels: 29.3649     
+Epoch 200/200
+1984/2000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7664 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6169 - PSNR: 23.7770342439
+ - MIN-MAX: (0.0, 1.0)
+2000/2000 [==============================] - 7s - loss: 0.0055 - acc: 0.7671 - mean_squared_error: 0.0043 - psnr_3_channels: 28.6194     
+PSNR test result : 23.8661386941
+MIN-MAX test result : (0.0, 1.0)
+train_result : epochs : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199] history : {'psnr_3_channels': [14.099045562744141, 20.473921295166015, 21.911694168090822, 19.145020187377931, 22.565519790649414, 23.285838027954103, 23.343356262207031, 23.179135498046875, 24.483567779541016, 23.710888534545898, 24.992768020629882, 23.572626678466797, 24.778753021240234, 23.993687927246093, 24.75573831176758, 24.975833984375001, 24.591762985229494, 25.502309600830078, 24.863915328979491, 24.962127944946289, 26.324731307983399, 25.309866546630861, 24.918876220703126, 25.850691925048828, 26.277454315185548, 26.240953308105468, 25.561096435546876, 26.087446090698243, 26.988415390014648, 25.943696380615233, 25.931116027832033, 26.335835128784179, 26.301276992797852, 26.56990301513672, 25.939938034057619, 26.162733932495119, 27.238549331665038, 24.274120727539064, 19.091882202148437, 24.3992166595459, 25.686039566040041, 26.00476626586914, 26.533731552124024, 26.062949356079102, 26.687018188476564, 26.573125091552733, 26.853094604492188, 27.344697845458985, 26.732705108642577, 26.655194442749025, 27.100375381469725, 27.749631225585937, 26.919681976318358, 27.674591247558595, 27.190395202636719, 27.081633666992186, 27.109725753784179, 27.351150909423829, 28.00264227294922, 28.272375701904298, 27.179736495971678, 28.04163377380371, 27.378061264038084, 27.388449981689455, 28.132655181884765, 27.730538955688477, 27.752771713256838, 28.012555282592775, 27.368190399169922, 28.496472030639648, 28.044881683349608, 26.862396865844726, 28.194852981567383, 28.384160446166991, 27.617507522583008, 28.674057983398438, 27.448979690551759, 28.277212158203124, 27.674883743286134, 28.289401306152342, 29.309167022705079, 26.984827056884765, 28.786225555419922, 28.880706710815431, 27.610572647094727, 28.576607162475586, 28.20191035461426, 27.337872695922851, 28.413332214355467, 28.6693662109375, 27.852762313842774, 28.469787475585939, 28.311585083007813, 28.314704650878905, 28.241450500488281, 28.135646148681641, 28.589350311279297, 27.624658950805664, 27.902537597656249, 29.052819305419924, 27.450437713623046, 28.86308059692383, 28.848444610595703, 28.760353973388671, 29.494894714355468, 27.53633955383301, 29.840117889404297, 27.541309799194337, 28.455117019653322, 29.170433959960938, 28.524174026489259, 28.805940704345701, 28.367877517700194, 28.46508786010742, 28.717456802368165, 27.813795684814455, 29.26388833618164, 28.784554321289061, 28.84402474975586, 28.609599838256838, 29.141295761108399, 28.512236557006837, 28.781328506469727, 28.827878753662109, 28.229645477294923, 28.061260360717775, 29.408702392578125, 28.579163696289061, 28.939349578857421, 27.977943420410156, 29.136402572631837, 28.84651448059082, 29.131010238647463, 28.447073089599609, 29.106475051879883, 29.544306991577148, 27.976498962402342, 29.32211944580078, 27.947981384277345, 29.13346075439453, 29.156890396118165, 28.741676971435545, 29.416580108642577, 29.466968307495119, 28.271431854248046, 27.989585479736327, 29.967314590454102, 29.293139419555665, 28.762423919677733, 28.861110702514647, 28.542435546875002, 29.592090759277344, 28.369573348999022, 29.482238098144531, 28.767939910888671, 28.890293548583983, 29.601538848876952, 29.144063568115236, 29.245015243530272, 28.149287414550781, 29.519862136840821, 29.195137588500977, 29.13845863342285, 28.566116394042968, 15.139314392089844, 22.075816925048827, 23.414295196533203, 24.32783595275879, 25.197213470458983, 26.219955139160156, 26.152919647216798, 26.274038208007813, 27.104646270751953, 26.762431640625, 27.191943634033205, 27.377125762939453, 27.839487228393555, 27.907305053710939, 28.267153778076171, 27.008414596557618, 28.423642654418945, 28.228665664672853, 28.234443878173828, 28.375078460693359, 28.737949798583983, 28.238972183227538, 28.580824569702148, 28.754071823120118, 28.483462326049803, 28.225556091308594, 29.293196746826172, 28.249581069946288, 28.041745758056642, 29.30690234375, 29.614726074218751, 29.547443450927734, 28.860159606933593, 28.522638763427736, 29.364852615356444, 28.619390457153319], 'loss': [0.12217185664176941, 0.04075823104381561, 0.034300563275814058, 0.049301368325948718, 0.030128779441118241, 0.027715537562966346, 0.026789245605468751, 0.026476534977555276, 0.02329121045768261, 0.023813509374856948, 0.021228326082229614, 0.022784968540072441, 0.020378545075654984, 0.020975112348794938, 0.019366483449935912, 0.018651883736252785, 0.018835020884871483, 0.017424062624573709, 0.017463766798377037, 0.017085301280021666, 0.015325193762779236, 0.015944364264607429, 0.016376725353300571, 0.014881127640604973, 0.01406894289702177, 0.013676142528653144, 0.014398060664534569, 0.013605270236730575, 0.012430992513895034, 0.013709003470838071, 0.012944242440164089, 0.012420375399291516, 0.01218830656260252, 0.011755063563585282, 0.012403827600181102, 0.011718467459082603, 0.010650271750986576, 0.018426737278699874, 0.039116732329130176, 0.014548634037375449, 0.012452059306204319, 0.011760201334953308, 0.011098723083734512, 0.011275934696197509, 0.010657200485467911, 0.010559938289225102, 0.010232432842254639, 0.0097131261900067333, 0.0098961473852396016, 0.0098939844593405723, 0.0095577624514698988, 0.0090018675848841673, 0.0093635664135217674, 0.0087810120582580559, 0.0089578238278627403, 0.0090345631241798407, 0.0088501951396465304, 0.0085795271247625354, 0.008074328050017357, 0.0079846416935324665, 0.0086482914984226233, 0.0078703408315777771, 0.0080851698406040669, 0.0081078432537615291, 0.0076427394747734072, 0.0077863016650080684, 0.0078039002306759357, 0.0074444571174681184, 0.007762952793389559, 0.0070994005799293516, 0.007256139799952507, 0.0082761154063045982, 0.0072609875425696377, 0.0070518934577703477, 0.0073441273644566539, 0.0067246482372283938, 0.0074818315729498867, 0.0067986827641725537, 0.0073416102379560474, 0.0068199884630739688, 0.0063451134786009786, 0.0075582386143505575, 0.006437768552452326, 0.0064125826917588707, 0.0069506870359182359, 0.0064213636517524717, 0.0065867143273353581, 0.007109867937862873, 0.0064700815193355085, 0.0063237861394882201, 0.0066603151522576813, 0.0062992225177586078, 0.0063969071432948112, 0.0063900164514780044, 0.0062934472933411601, 0.0065357439592480656, 0.0061450199149549007, 0.0067848156094551084, 0.0065578013099730015, 0.0058507873117923737, 0.006827777057886124, 0.0058823865428566935, 0.0060206353217363354, 0.0058775733076035976, 0.0055951482318341728, 0.0065077171102166176, 0.0055484239608049393, 0.006518943831324577, 0.0060795264765620234, 0.0056895013824105264, 0.0060386912636458878, 0.0057098948284983637, 0.0061049221456050875, 0.0058731558807194233, 0.0057127532437443737, 0.0063564859740436073, 0.005498516097664833, 0.0058253555856645108, 0.0057646171227097509, 0.0058203391432762146, 0.0054987544976174835, 0.0058101893514394759, 0.0056171310059726235, 0.0055680606216192245, 0.0059561320617794993, 0.0061029616221785548, 0.0053750292547047138, 0.0058262748755514623, 0.0054994955658912662, 0.0059432594850659373, 0.0055514023229479787, 0.0054992104321718218, 0.0053671515285968778, 0.0056709049083292487, 0.0053951600380241875, 0.00523688480257988, 0.0059447211623191833, 0.0052523629665374759, 0.0059452030174434187, 0.0053282357342541217, 0.0054077296815812585, 0.0054658008441329006, 0.0052055676281452176, 0.0052417316250503061, 0.0057168865837156774, 0.0058412489779293541, 0.0051109908483922481, 0.0052383551560342308, 0.0055407762192189692, 0.0054678579904139041, 0.0055398344397544859, 0.0051564136296510694, 0.0055987395159900191, 0.0051425674594938759, 0.005408317744731903, 0.0053311769552528854, 0.0051260353103280065, 0.0052757332324981686, 0.0051683390103280545, 0.0057452208511531355, 0.005119048446416855, 0.005217253025621176, 0.0052078226432204248, 0.0055909324400126937, 0.10405374678969383, 0.015832804821431637, 0.012681696049869061, 0.010686855688691139, 0.0097208072766661636, 0.0083949767053127285, 0.0081975979954004279, 0.0079501162692904477, 0.0074083567112684249, 0.0073912529870867726, 0.0071108943298459053, 0.0068339255228638653, 0.0065518762767314909, 0.0064483338594436643, 0.0063592779636383054, 0.0069248067513108255, 0.0061361374333500866, 0.0060703238360583786, 0.0061679438352584843, 0.0059688046164810661, 0.0058022142536938194, 0.0060716105923056601, 0.0058064132258296014, 0.0057511773891747, 0.0058706722520291809, 0.0058458326570689674, 0.0055078536234796048, 0.0059639516547322271, 0.0058495917767286297, 0.005415941014885902, 0.0053184215538203718, 0.0053422393798828122, 0.005543511711061001, 0.0056298555023968216, 0.0053206230886280537, 0.0055313705019652843], 'mean_squared_error': [0.09773053658008575, 0.018482363671064376, 0.013462751075625419, 0.029524447605013847, 0.011279560610651969, 0.0098133008182048793, 0.0097516547217965134, 0.010236224994063377, 0.0077799322754144671, 0.0089915095567703242, 0.0070534458085894586, 0.0092129899039864547, 0.007369383707642555, 0.0085003449544310567, 0.0073856238126754764, 0.0071531288176774977, 0.0077805952392518522, 0.0067968316897749903, 0.0072369378209114071, 0.0072314663343131542, 0.0058325052000582217, 0.0067985371872782705, 0.0075311433412134652, 0.0063241820782423018, 0.0058151396475732324, 0.0057094483748078347, 0.0066949367485940455, 0.0061572522148489956, 0.0052230169884860513, 0.0067284379787743093, 0.0061636446379125121, 0.0058452562354505064, 0.0058210264816880228, 0.0055752262584865091, 0.0064116552881896497, 0.0058875398002564911, 0.0049905192404985426, 0.012921700745821, 0.033202944740653037, 0.0084694170020520685, 0.0065602935738861565, 0.0060811584368348119, 0.005614850111305714, 0.0059699489548802375, 0.0055195926278829577, 0.00558425372838974, 0.0054052683003246787, 0.0050258517414331436, 0.0053419893272221089, 0.0054585915543138982, 0.0052419975064694879, 0.0048045789822936062, 0.0052751136645674702, 0.0047957453690469264, 0.0050683637373149393, 0.0052374994605779652, 0.0051481565125286576, 0.0049636533558368679, 0.0045474118776619435, 0.0045421449840068817, 0.0052751031294465062, 0.0045731222853064536, 0.0048604018092155456, 0.0049507008120417591, 0.0045494854003190997, 0.004757476780563593, 0.0048295085225254298, 0.004533843347802758, 0.0049060745649039741, 0.0042957445178180929, 0.0045073944404721263, 0.0055430756658315658, 0.0045761768221855162, 0.0044190396554768087, 0.0047639137059450149, 0.0041930190511047837, 0.0049968844540417192, 0.0043551833555102344, 0.0049407008439302444, 0.0044544244818389414, 0.004021072246134281, 0.005268772544339299, 0.0041777989417314532, 0.0041922300122678282, 0.0047642326392233368, 0.0042660624403506519, 0.0044621997401118278, 0.0050058961231261492, 0.0043976108804345132, 0.004277931120246649, 0.0046446537338197232, 0.0043071330823004246, 0.00443102902173996, 0.0044489607140421866, 0.0043791853506118059, 0.0046330827251076703, 0.0042679716944694522, 0.0049325262606143951, 0.0047067325208336114, 0.0040307264402508732, 0.0050313559658825401, 0.0040997181478887798, 0.0042656413689255712, 0.0041426325514912609, 0.0038837447687983511, 0.004810663238167763, 0.0038655819259583949, 0.004857168931514025, 0.0044245629087090489, 0.0040543930567800996, 0.0044176549203693866, 0.0041064576730132103, 0.004517229564487934, 0.0042930655106902119, 0.0041489900723099705, 0.0048023633435368539, 0.003958921797573566, 0.0043046076372265816, 0.0042492777649313215, 0.004321820538491011, 0.0040137920677661898, 0.0043377099093049763, 0.0041527630463242529, 0.0041166234202682974, 0.0045128912925720211, 0.0046503901965916153, 0.0039360822141170501, 0.0044065768644213675, 0.0040913708545267579, 0.0045447678789496421, 0.0041581000443547964, 0.0041192389633506535, 0.0039988068565726276, 0.0043085602205246683, 0.0040402974821627143, 0.003894168809056282, 0.0046078371107578274, 0.0039203822128474715, 0.0046191025823354723, 0.00400548205897212, 0.0040994166955351831, 0.0041631673425436017, 0.0039102110117673877, 0.0039566994532942773, 0.0044317624568939208, 0.0045557806957513096, 0.0038397844694554807, 0.0039774485193192956, 0.0042754226922988893, 0.0042111247889697551, 0.0042906795907765626, 0.0039151491932570932, 0.0043638812489807605, 0.0039143998138606549, 0.0041839105263352392, 0.004112428270280361, 0.0039134956151247024, 0.0040692308079451319, 0.0039655569866299629, 0.0045383824966847893, 0.0039155205301940445, 0.0040217297188937665, 0.004017075272276998, 0.0044073974080383778, 0.10220047940313816, 0.012831070065498352, 0.0097496139854192729, 0.0078911162428557877, 0.0070827980265021325, 0.005903573088347912, 0.0058329161964356903, 0.0056972929462790487, 0.005247501131147146, 0.0053095895648002621, 0.0050980177298188207, 0.0048824108690023425, 0.0046567777991294865, 0.004611341129988432, 0.004570550620555878, 0.0051816142983734607, 0.0044314726404845713, 0.0044052490293979641, 0.0045368347689509394, 0.00437007618881762, 0.0042351782955229282, 0.0045320119615644217, 0.0042930634580552575, 0.0042639939635992054, 0.0044064728841185568, 0.0044036502055823804, 0.0040870079398155216, 0.0045616020262241362, 0.0044645446017384533, 0.0040489456914365295, 0.0039708278365433213, 0.0040081298109143973, 0.0042255590576678517, 0.0043278616033494473, 0.0040333905816078187, 0.004256140045821667], 'acc': [0.37834960937500001, 0.51705859374999996, 0.57058642578124996, 0.4941240234375, 0.59104443359375003, 0.61006494140625001, 0.62264404296874998, 0.63851660156250001, 0.63822460937500003, 0.64952294921874998, 0.64157763671875001, 0.66424414062500003, 0.66200927734375004, 0.65086376953125002, 0.67093652343749999, 0.67324755859374996, 0.67608447265625005, 0.6846923828125, 0.68421728515625002, 0.70016748046874999, 0.69373193359374996, 0.70074072265624998, 0.69090478515624998, 0.70366748046875005, 0.71098730468750004, 0.696626953125, 0.73632568359374995, 0.70284912109374997, 0.71217187500000001, 0.71727636718749999, 0.71279052734375004, 0.71704345703125005, 0.71917138671875003, 0.717529296875, 0.71277099609375005, 0.73657763671874998, 0.72315722656250003, 0.68434228515624995, 0.46799853515625001, 0.61234374999999996, 0.64036083984375003, 0.64177294921875006, 0.66934521484374998, 0.65892089843750001, 0.67400683593749999, 0.6806689453125, 0.71522949218749998, 0.71076757812500002, 0.69655761718749998, 0.7065947265625, 0.69163720703124998, 0.72174511718750001, 0.73476708984375005, 0.72518408203124995, 0.70227294921875005, 0.74698779296874995, 0.70785351562499998, 0.73894482421874996, 0.72276074218749997, 0.75848193359375005, 0.72931542968749996, 0.75080126953125004, 0.72865136718750001, 0.74130273437500005, 0.75425781250000001, 0.73601171875000004, 0.7491455078125, 0.73660107421874998, 0.75588574218750004, 0.73841845703124998, 0.732689453125, 0.75990673828124999, 0.76009716796875004, 0.74827636718750001, 0.74523388671875002, 0.73189404296875005, 0.76439550781249999, 0.74300439453125, 0.75548388671875, 0.75644238281249998, 0.75476416015625003, 0.75427343749999998, 0.73810156250000003, 0.7730947265625, 0.76805761718749999, 0.754755859375, 0.74697363281249995, 0.75459814453124996, 0.74995458984374996, 0.76322265624999996, 0.75231787109375003, 0.75803808593749999, 0.77101904296875001, 0.77611132812500006, 0.74632568359374996, 0.76918261718750003, 0.76623144531249998, 0.74281738281249998, 0.76427978515624995, 0.74713916015625004, 0.77269775390624995, 0.74378662109375004, 0.78132177734374997, 0.74469238281250005, 0.76442382812499998, 0.76392675781249997, 0.80456787109375005, 0.7346142578125, 0.76999316406249996, 0.76563867187500001, 0.77860742187499998, 0.75126269531250001, 0.77538281249999996, 0.76481689453125001, 0.75558349609374997, 0.77578857421875003, 0.76121777343749997, 0.77118408203125, 0.75553515625000001, 0.77729248046874999, 0.75759130859375001, 0.77428662109375002, 0.76919140625000004, 0.75969970703125, 0.77567431640624995, 0.76843945312499995, 0.76480664062500003, 0.78502392578125002, 0.76353320312499995, 0.75689257812499999, 0.77521874999999996, 0.769357421875, 0.76844042968750004, 0.75891992187500001, 0.78310351562500002, 0.77339599609374998, 0.78127197265625004, 0.76942529296874995, 0.76787353515625001, 0.77327197265625003, 0.78796435546874999, 0.77150830078124999, 0.76848681640625005, 0.77599169921875, 0.77245556640625002, 0.76906835937499995, 0.77636376953124997, 0.77106689453124999, 0.79949999999999999, 0.77813671875000001, 0.77368359374999995, 0.77130761718749996, 0.77406494140625004, 0.77334667968750004, 0.78287109374999997, 0.76308593749999998, 0.79832617187499999, 0.76718212890625004, 0.78358837890624999, 0.77833447265625, 0.76527587890625004, 0.77536279296874999, 0.77685742187499995, 0.78699072265625003, 0.42349218750000001, 0.47409716796875001, 0.5917451171875, 0.62035986328125003, 0.65852685546875001, 0.67380517578124999, 0.68485351562499996, 0.67824218749999998, 0.71641943359375004, 0.69539306640624998, 0.73057714843749999, 0.7004912109375, 0.73507324218750003, 0.72084326171875002, 0.74039892578124999, 0.72080761718749997, 0.73830712890625005, 0.7299853515625, 0.76569970703125001, 0.73599951171875, 0.72940136718750004, 0.76137255859374997, 0.75041406249999998, 0.75102490234374997, 0.77862255859374996, 0.72469873046875, 0.77510058593749998, 0.77406298828124998, 0.74756298828125001, 0.76519384765624998, 0.76164501953124997, 0.77240624999999996, 0.77512792968749999, 0.75982373046874996, 0.76893750000000005, 0.76709179687499995]}
+saving model to results/CIFAR-10 20000 tf/model/srcnn-cifar10-20000-tf-2000images-9_3_1_5-64_32_32-200epochs-he_uniform-custom_relu.h5...
+model results/CIFAR-10 20000 tf/model/srcnn-cifar10-20000-tf-2000images-9_3_1_5-64_32_32-200epochs-he_uniform-custom_relu.h5 saved
+ 9952/10000 [============================>.] - ETA: 0s
+test_result : [0.0053746466666460034, 0.81667519531249999, 0.0041056898780167106, 29.249369900512697]
+plotting train and test results...
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.png
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.svg
+PSNR history : [16.546465110409301, 16.706597912593967, 15.413811646384019, 18.976435269511047, 19.500369678297833, 18.476634383262301, 19.352163415850491, 19.43559204357808, 19.560105319757159, 20.460859825307473, 19.347689306953267, 21.171392561790789, 21.253964547884415, 20.740301136775265, 21.173273975759315, 19.832665053681861, 20.866658424267609, 21.545480543047265, 22.574206386644885, 21.641508681354516, 22.902524046117399, 19.96607350053252, 20.429640954430965, 23.315907955091959, 21.237947251699225, 21.215580287509891, 23.525079583361684, 21.761323459268702, 22.287731180056333, 23.45432879514248, 21.827409613803574, 23.209006936581321, 22.157118599696087, 23.447406594984148, 22.073590395651731, 22.226327931224677, 23.945723989723433, 12.125690712257914, 20.053886532217852, 21.163967566477488, 21.322711017412985, 22.602401282679857, 21.675663374700296, 22.009962286164981, 23.261830602814367, 22.991913784113592, 22.750628757613434, 23.10452845069641, 22.197543940804145, 21.84902555103108, 23.361273464843496, 22.804760596917085, 21.954097116127773, 23.151800902396079, 21.981479535414241, 23.728459577852643, 22.12180467605565, 23.829844248925323, 23.593491939901668, 21.0739362730232, 23.414073786570956, 22.531518806234814, 23.712630278572639, 23.272957057570274, 22.244607733327495, 23.234073915638149, 23.871930348511974, 23.004175249012093, 23.831041692733947, 23.969433901716997, 22.31118278694241, 24.063866054536575, 22.282593868567862, 23.673653067946972, 24.013193403359978, 24.007647295414319, 23.373336045788339, 22.855492134511746, 22.126229173529893, 23.654281152209347, 22.632428881469551, 23.799977902021109, 24.076078817562259, 23.922880446710234, 23.444370313191641, 24.209020014628834, 22.706129041922274, 24.244073466489439, 23.159548627121261, 24.081209459723205, 22.955146659317492, 23.90969392763612, 23.587151652926099, 23.777508238690483, 23.571601785139507, 23.959628099527116, 24.166330099839421, 21.611194403733794, 24.147461031549341, 23.636304562423952, 24.058382546729334, 24.10529470171118, 23.647585888155149, 24.278057525441028, 23.762648063595478, 23.828472466897498, 23.459623029425781, 22.853429891439021, 24.04665925919322, 22.648794869316532, 24.01614739697925, 23.847882409019988, 23.329729583210693, 24.186614212936494, 24.131183963523853, 23.598200393433562, 24.283086564188011, 23.102483285662899, 24.501321244631139, 24.326841742116819, 23.936146365763598, 24.1157563045508, 23.916517077765729, 23.89790339976631, 21.497192003989774, 23.993191599145792, 24.369677282456831, 23.96126099110581, 24.064462725378142, 24.474399301731413, 23.978444165604628, 23.990896749391418, 23.452122872613302, 24.079722212158678, 23.937034284830446, 23.883772527031944, 24.177172775994084, 24.072827559341011, 23.373535601046321, 24.412623948652321, 23.309997051647056, 24.275306992082744, 23.722885741965413, 23.837815601737763, 22.477234299655905, 24.168567125278095, 23.988290323795209, 22.790312512448551, 23.378575373400757, 23.811940201737368, 23.880673318009681, 23.41281839649865, 24.086423358880008, 23.594617402731629, 24.059933608109354, 23.668782281432183, 24.135481843928581, 23.715958166953619, 23.233948103926764, 23.648967081959057, 24.323498042298105, 24.417701031299149, 24.147488659492005, 22.352072357980912, 17.636338969451561, 20.230448328482776, 21.207287248666475, 22.154460476876213, 21.950391426179834, 21.461943341233777, 22.885916669889056, 22.720349023041809, 22.901547580816523, 23.231734216561165, 23.4530120191328, 23.645016991396712, 23.23406928231578, 22.974398842932089, 22.519475776958839, 23.535719048210456, 23.714632256957174, 23.858511860264056, 22.884104151254551, 23.877555699524031, 23.02515083635447, 23.74990238648828, 24.122706753428766, 23.685559419136766, 23.43838337837267, 23.94840673048482, 23.905518255985218, 23.539077439408032, 23.297520492879332, 24.087881364267545, 23.606882514401178, 24.023049408418487, 23.73569936194157, 23.712286624640942, 23.688171420570239, 23.777034243904787]
+PSNR epoch history :  []
+MIN-MAX history : [(0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0010612085, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0)]
+MIN-MAX epoch history :  []
+10000/10000 [==============================] - 7s     
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+prediction image 0 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 0:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 0:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.9655, SSIM : 0.8404, MSE : 328.4945
+
+prediction image 1 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 1:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 1:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 17.3169, SSIM : 0.7431, MSE : 1206.126
+
+prediction image 2 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 2:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 2:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 25.5564, SSIM : 0.9051, MSE : 180.8988
+
+prediction image 3 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 3:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 3:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.6449, SSIM : 0.7897, MSE : 353.6657
+
+prediction image 4 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 4:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 4:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 23.3303, SSIM : 0.7845, MSE : 302.0299
+
+prediction image 5 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 5:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 5:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 24.2176, SSIM : 0.8273, MSE : 246.2171
+
+prediction image 6 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 6:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 6:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.0474, SSIM : 0.8339, MSE : 405.8223
+
+prediction image 7 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 7:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 7:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 27.9523, SSIM : 0.8985, MSE : 104.195
+
+prediction image 8 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 8:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 8:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 26.0492, SSIM : 0.8786, MSE : 161.4948
+
+prediction image 9 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 9:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 9:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.1757, SSIM : 0.8341, MSE : 394.0094
+SRCNN running lasted 28 m 2 s 43 ms
+
+Process finished with exit code 0

@@ -1,0 +1,4 @@
+custom_relu
+he_uniform
+9-3-1-5
+64-32-32

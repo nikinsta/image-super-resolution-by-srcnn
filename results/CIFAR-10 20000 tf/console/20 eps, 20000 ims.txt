@@ -1,0 +1,283 @@
+C:\Users\User\AppData\Local\Programs\Python\Python35\python.exe C:/Users/User/PycharmProjects/neural-networks-sandbox/neural_network.py
+Using TensorFlow backend.
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cublas64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cudnn64_5.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library cufft64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library nvcuda.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:128] successfully opened CUDA library curand64_80.dll locally
+neural_network module running...
+SRCNN tf running...
+getting SRCNN-RGB CIFAR-10 (20000) dataset ...
+opening datasets/srcnn-rgb-cifar10-20000-dataset.npz...
+validation...
+ACCEPTED
+validation...
+ACCEPTED
+X_train : [ num : 20000, height : 32, width : 32, depth : 3 ], X_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+Y_train : [ num : 20000, height : 32, width : 32, depth : 3 ], Y_test : [ num : 10000, height : 32, width : 32, depth : 3 ]
+
+making PSNR callback metric...
+making MIN-MAX callback metric...
+SRCNN fitting...
+PSNR (3 channels) metric running...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+PSNR callback metric running...
+MIN-MAX callback metric running...
+Epoch 1/20
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:885] Found device 0 with properties: 
+name: GeForce GT 740M
+major: 3 minor: 0 memoryClockRate (GHz) 0.895
+pciBusID 0000:01:00.0
+Total memory: 2.00GiB
+Free memory: 1.92GiB
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:906] DMA: 0 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:916] 0:   Y 
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GT 740M, pci bus id: 0000:01:00.0)
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0345 - acc: 0.5919 - mean_squared_error: 0.0168 - psnr_3_channels: 21.9989 - PSNR: 18.8686086356
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 84s - loss: 0.0345 - acc: 0.5918 - mean_squared_error: 0.0168 - psnr_3_channels: 21.9985    
+Epoch 2/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0178 - acc: 0.6836 - mean_squared_error: 0.0073 - psnr_3_channels: 25.0041 - PSNR: 22.0564234573
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0178 - acc: 0.6836 - mean_squared_error: 0.0073 - psnr_3_channels: 25.0050    
+Epoch 3/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0151 - acc: 0.6835 - mean_squared_error: 0.0078 - psnr_3_channels: 25.2615 - PSNR: 22.858960207
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0151 - acc: 0.6836 - mean_squared_error: 0.0078 - psnr_3_channels: 25.2620    
+Epoch 4/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0109 - acc: 0.7217 - mean_squared_error: 0.0054 - psnr_3_channels: 26.8378 - PSNR: 23.4620469945
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0109 - acc: 0.7216 - mean_squared_error: 0.0054 - psnr_3_channels: 26.8393    
+Epoch 5/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0092 - acc: 0.7345 - mean_squared_error: 0.0052 - psnr_3_channels: 27.2327 - PSNR: 22.8908161797
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0092 - acc: 0.7344 - mean_squared_error: 0.0052 - psnr_3_channels: 27.2299    
+Epoch 6/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0080 - acc: 0.7453 - mean_squared_error: 0.0048 - psnr_3_channels: 27.5895 - PSNR: 23.3236572726
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0080 - acc: 0.7452 - mean_squared_error: 0.0048 - psnr_3_channels: 27.5882    
+Epoch 7/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0073 - acc: 0.7523 - mean_squared_error: 0.0047 - psnr_3_channels: 27.8031 - PSNR: 23.3033058592
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0073 - acc: 0.7522 - mean_squared_error: 0.0047 - psnr_3_channels: 27.8058    
+Epoch 8/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0068 - acc: 0.7559 - mean_squared_error: 0.0046 - psnr_3_channels: 28.0280 - PSNR: 23.4865382568
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0068 - acc: 0.7559 - mean_squared_error: 0.0046 - psnr_3_channels: 28.0288    
+Epoch 9/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0064 - acc: 0.7610 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2546 - PSNR: 23.8240480812
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0064 - acc: 0.7610 - mean_squared_error: 0.0045 - psnr_3_channels: 28.2529    
+Epoch 10/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0061 - acc: 0.7659 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4396 - PSNR: 23.2416481685
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0061 - acc: 0.7660 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4379    
+Epoch 11/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0060 - acc: 0.7663 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4306 - PSNR: 24.1367858069
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0060 - acc: 0.7663 - mean_squared_error: 0.0044 - psnr_3_channels: 28.4306    
+Epoch 12/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0057 - acc: 0.7733 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7281 - PSNR: 24.0731899592
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0057 - acc: 0.7732 - mean_squared_error: 0.0043 - psnr_3_channels: 28.7255    
+Epoch 13/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0056 - acc: 0.7714 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7190 - PSNR: 23.9087604433
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0056 - acc: 0.7713 - mean_squared_error: 0.0042 - psnr_3_channels: 28.7185    
+Epoch 14/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0055 - acc: 0.7770 - mean_squared_error: 0.0041 - psnr_3_channels: 29.0528 - PSNR: 24.0868011157
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0055 - acc: 0.7771 - mean_squared_error: 0.0041 - psnr_3_channels: 29.0539    
+Epoch 15/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0054 - acc: 0.7752 - mean_squared_error: 0.0041 - psnr_3_channels: 28.9697 - PSNR: 23.833006906
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0054 - acc: 0.7752 - mean_squared_error: 0.0041 - psnr_3_channels: 28.9694    
+Epoch 16/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0053 - acc: 0.7787 - mean_squared_error: 0.0041 - psnr_3_channels: 29.0277 - PSNR: 23.8316700267
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0053 - acc: 0.7788 - mean_squared_error: 0.0041 - psnr_3_channels: 29.0263    
+Epoch 17/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7813 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1607 - PSNR: 23.6999469855
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0052 - acc: 0.7813 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1600    
+Epoch 18/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0052 - acc: 0.7767 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1933 - PSNR: 24.257379581
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0052 - acc: 0.7768 - mean_squared_error: 0.0040 - psnr_3_channels: 29.1944    
+Epoch 19/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0051 - acc: 0.7858 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4233 - PSNR: 24.4829989226
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0051 - acc: 0.7859 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4274    
+Epoch 20/20
+19968/20000 [============================>.] - ETA: 0s - loss: 0.0050 - acc: 0.7866 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4722 - PSNR: 23.7032363383
+ - MIN-MAX: (0.0, 1.0)
+20000/20000 [==============================] - 79s - loss: 0.0050 - acc: 0.7864 - mean_squared_error: 0.0039 - psnr_3_channels: 29.4703    
+PSNR test result : 23.7279740478
+MIN-MAX test result : (0.0, 1.0)
+train_result : epochs : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] history : {'acc': [0.591847314453125, 0.68359379882812499, 0.68361806640625, 0.72160302734375004, 0.73436787109375001, 0.74523754882812498, 0.75216206054687496, 0.75587416992187495, 0.76104814453125003, 0.76603715820312501, 0.76631298828125005, 0.77319047851562495, 0.77132983398437505, 0.77708876953124995, 0.77517895507812495, 0.77878535156249995, 0.78129184570312504, 0.77676728515625004, 0.78590332031249999, 0.78643964843750003], 'loss': [0.034519467458128929, 0.017832719068229197, 0.015097101764380932, 0.010865144586563111, 0.0092433874845504766, 0.0080286078661680228, 0.0073157670006155969, 0.0067742850124835972, 0.0064350104011595246, 0.0061003301769495012, 0.0059569584839046005, 0.0057219608210027214, 0.0056080875538289544, 0.0054605949684977534, 0.0053733478270471093, 0.0053160121776163576, 0.0052189673632383349, 0.0051958971902728085, 0.0050555802926421168, 0.0050215455643832681], 'psnr_3_channels': [21.998530923461914, 25.00503168334961, 25.261950433349611, 26.839321749877929, 27.229889849853517, 27.588223431396486, 27.805768060302736, 28.028831817626955, 28.252928805541991, 28.437882458496095, 28.430553076171876, 28.725497271728514, 28.718491809082032, 29.053932992553712, 28.969390643310547, 29.026315881347657, 29.160009963989257, 29.1944279296875, 29.427441149902343, 29.470268542480468], 'mean_squared_error': [0.016792173634469509, 0.0073092655472457406, 0.0078403848014771942, 0.0053935279265046121, 0.005159758694469929, 0.0048362297452986241, 0.0047144284814596175, 0.0045767152905464171, 0.0045081574022769926, 0.0043818805523216722, 0.0043789929624646904, 0.0042531955294311044, 0.004222012943774462, 0.0041315140493214135, 0.0041093949705362318, 0.0040973077654838565, 0.0040342115212231872, 0.0040377701140940185, 0.0039300495944917203, 0.0039222660526633266]}
+ 9952/10000 [============================>.] - ETA: 0s
+test_result : [0.0053266597509384157, 0.78193388671874997, 0.0042384064905345437, 28.225652786254884]
+plotting train and test results...
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.png
+saving results/CIFAR-10 20000 tf/plots/train-and-test-results.svg
+PSNR history : [18.868608635594015, 22.056423457270032, 22.85896020695494, 23.462046994543879, 22.890816179738742, 23.323657272609427, 23.303305859243174, 23.486538256824026, 23.824048081197368, 23.241648168480356, 24.136785806885733, 24.073189959230277, 23.908760443318112, 24.086801115676888, 23.833006906042399, 23.831670026683902, 23.699946985532485, 24.257379581007594, 24.482998922553389, 23.703236338313843]
+PSNR epoch history :  []
+MIN-MAX history : [(0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0), (0.0, 1.0)]
+MIN-MAX epoch history :  []
+10000/10000 [==============================] - 7s     
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 32, 32, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 32, 32, 64)        15616     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 32, 32, 32)        18464     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 32, 32, 32)        1056      
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 32, 32, 3)         2403      
+=================================================================
+Total params: 37,539
+Trainable params: 37,539
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+prediction image 0 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 0:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 0:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.9416, SSIM : 0.8476, MSE : 330.3125
+
+prediction image 1 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 1:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 1:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 16.9495, SSIM : 0.7492, MSE : 1312.5863
+
+prediction image 2 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 2:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 2:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 25.319, SSIM : 0.9048, MSE : 191.0638
+
+prediction image 3 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 3:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 3:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.9115, SSIM : 0.8006, MSE : 332.609
+
+prediction image 4 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 4:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 4:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.9699, SSIM : 0.7859, MSE : 328.1624
+
+prediction image 5 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 5:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 5:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 24.4086, SSIM : 0.8269, MSE : 235.6243
+
+prediction image 6 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 6:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 6:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.5909, SSIM : 0.8642, MSE : 358.0882
+
+prediction image 7 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 7:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 7:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 27.9155, SSIM : 0.9028, MSE : 105.082
+
+prediction image 8 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 8:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 8:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 25.3468, SSIM : 0.875, MSE : 189.8473
+
+prediction image 9 :
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+zoomed out image 9:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+original image 9:
+4 (10000, 32, 32, 3) 30720000 uint8 1
+3 (32, 32, 3) 3072 uint8 1
+computing images difference metrics...
+PSNR : 22.4297, SSIM : 0.8386, MSE : 371.6309
+SRCNN running lasted 28 m 8 s 740 ms
