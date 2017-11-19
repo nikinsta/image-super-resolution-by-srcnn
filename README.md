@@ -7,7 +7,8 @@ GPU | CPU
 NVIDIA GPUs that supports CUDA | 
 the last stable NVIDIA driver version |
 tensorflow-gpu | tensorflow
-if gpu then CUDA |
+cuDNN |
+CUDA |
 
 * scipy (maybe wheel)
 * numpy (if scipy wheel then numpy+mkl)
